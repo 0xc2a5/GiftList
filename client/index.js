@@ -18,6 +18,7 @@ async function main() {
   // Hardcoded in the server as MERKLE_ROOT
   root = merkleTree.getRoot();
   console.log("MERKLE_ROOT", root);
+  console.log("byteLength", Buffer.byteLength(root, "hex")); // 32
 }
 
 main();
